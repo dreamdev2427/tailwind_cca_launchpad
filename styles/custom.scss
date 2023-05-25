@@ -1,0 +1,355 @@
+.threeD-card {
+  /* max-width: 45ch;
+    max-height: 45ch; */
+  width: 100%;
+  height: fit-content;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+}
+
+.text-primary-shadow {
+  text-shadow: 3px 4px 6px rgb(0 0 0 / 30%);
+}
+
+.threeD-card:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}
+
+.rize-slide {
+  display: flex !important;
+  align-items: center;
+}
+
+.container-fluid {
+  padding: 10px 50px;
+}
+
+/*            Copy Button           */
+.copy_button,
+.quick_view_data .copy_button {
+  border: 1px solid #fac01e;
+  border-radius: 3px;
+  font-family: "Sarabun", sans-serif;
+  font-size: 16px;
+  line-height: 154.41%;
+  color: #fac01e;
+  background: transparent;
+  margin-left: 10px;
+}
+
+.copy_button:hover,
+.quick_view_data .copy_button:hover,
+.copy_button.copy_icon_button:hover {
+  background: transparent;
+}
+
+.copy_button.copy_icon_button {
+  border: unset;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  color: #ffffff;
+  background: transparent;
+}
+
+.copy_button.copy_icon_button svg {
+  width: 20px;
+  fill: #000;
+}
+
+.author-box {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.multiple-input {
+  border-width: 1px !important;
+  border-color: rgba(var(--c-neutral-200), var(--tw-border-opacity)) !important;
+  border-radius: 1rem !important;
+  background-color: rgb(255 255 255) !important;
+}
+
+.multiple-text-input {
+  div {
+    font-family: inherit !important;
+    padding-top: 0px !important;
+    background-color: transparent !important;
+
+    &::before,
+    &::after {
+      border-bottom: none !important;
+    }
+  }
+
+  input {
+    padding: 12px 4px !important;
+    border: none !important;
+    box-shadow: none !important;
+
+    &::placeholder {
+      font-size: 14px !important;
+      font-weight: 100 !important;
+      color: #8eaabb !important;
+    }
+  }
+}
+
+.CollectionCard {
+  .edit-buttons {
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+  }
+
+  &:hover {
+    .edit-buttons {
+      opacity: 1;
+    }
+  }
+}
+
+.swal2-popup {
+  button {
+    background-color: rgb(var(--c-primary-600)) !important;
+    border-radius: 999px !important;
+    min-width: 100px;
+  }
+}
+
+.discover-slider {
+  gap: 20px;
+}
+
+.slider-btn-group {
+  position: absolute;
+  bottom: -60px;
+  right: 18%;
+}
+
+.slider-tutorial-group {
+  position: absolute;
+  bottom: -35px;
+  right: 0;
+  z-index: 999;
+}
+
+.slick-dots li button:before {
+  font-size: 12px !important;
+  color: rgba(var(--c-primary-600), var(--tw-bg-opacity));
+}
+
+@media screen and (max-width: 1023px) {
+  .slider-btn-group {
+    right: 0;
+    left: 0;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+/****         Tutorial         ****/
+
+.tutorial-modal {
+  inset: 50% auto auto 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  position: absolute;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+}
+
+.tutorial-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.tutorial-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.btn-end-tutorial {
+  width: 120px;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+
+.slick-slide img {
+  width: 100% !important;
+}
+
+.dark {
+  .copy_button.copy_icon_button svg {
+    width: 20px;
+    fill: #fff;
+  }
+
+  .multiple-input {
+    background-color: rgb(var(--c-neutral-900)) !important;
+    border: 1px solid rgb(var(--c-neutral-700)) !important;
+  }
+
+  .swal2-popup {
+    background-color: rgb(var(--c-neutral-800));
+
+    .swal2-title,
+    .swal2-html-container {
+      color: white;
+    }
+  }
+
+  .tutorial-modal {
+    border: 1px solid #23232a;
+    background-color: #0f0f14;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(78, 78, 78, 0.3);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 10px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  transition-timing-function: linear !important;
+  position: relative;
+  user-select: none;
+  -webkit-touch-callout: none;
+  backface-visibility: hidden;
+}
+
+.highlight-inner .swiper-slide {
+  width: auto !important;
+}
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  canvas {
+    position: relative !important;
+  }
+}
+
+.card {
+  border-radius: 3rem;
+  background-color: whitesmoke;
+  border: 4px solid rgb(34, 197, 94);
+  overflow: hidden;
+}
+
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 30;
+
+  &.avatar-dropdown-content {
+    left: auto;
+    transform: none;
+  }
+}
+
+.dropdown-content a {
+  padding: 0.4rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown1-content {
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 30;
+
+  &.avatar-dropdown-content {
+    left: auto;
+    transform: none;
+  }
+}
+
+.dropdown1-content a {
+  padding: 0.4rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown1-content {
+  display: block;
+}
+
+.web3modal-modal-lightbox {
+  z-index: 999 !important;
+}
+
+.clear-icon {
+  margin: 0 14px 0 0 !important;
+}

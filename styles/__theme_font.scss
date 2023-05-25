@@ -1,0 +1,46 @@
+// POPPINS
+@font-face {
+  font-family: Poppins;
+  font-weight: 300;
+  src: url("../fonts/Poppins/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 400;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 500;
+  src: url("../fonts/Poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 600;
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 700;
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: Grifter;
+  src: url("../fonts/grifter.otf");
+}
+
+:root {
+  --font-display: Grifter;
+  --font-body: Grifter;
+  letter-spacing: 1px;
+}
+
+.theme-animals {
+  --font-display: Inter;
+  --font-body: Inter;
+}
